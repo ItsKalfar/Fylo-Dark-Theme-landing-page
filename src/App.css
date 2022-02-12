@@ -1,0 +1,133 @@
+:root {
+  /* Primary */
+  --intro-and-email-sign-up-background: hsl(217, 28%, 15%);
+  --main-background: hsl(218, 28%, 13%);
+  --footer-background: hsl(216, 53%, 9%);
+  --testimonials-background: hsl(219, 30%, 18%);
+
+  /* Accent */
+
+  --Cyan-inside-call-to-action-gradient: hsl(176, 68%, 64%);
+  --Blue-inside-call-to-action-gradient: hsl(198, 60%, 50%);
+  --Light-Red-error: hsl(0, 100%, 63%);
+
+  /* Neutral  */
+
+  --White: hsl(0, 0%, 100%);
+
+  /* Font famalies  */
+
+  --ff-Raleway: "Raleway", sans-serif;
+  --ff-open-sans: "Open sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  font-family: var(--ff-Raleway);
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 14px;
+}
+
+#features,
+#teams,
+#testimonials {
+  background-color: var(--main-background);
+}
+
+#footer {
+  background-color: var(--footer-background);
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-Raleway);
+  color: var(--White);
+}
+
+p {
+  font-family: var(--ff-open-sans);
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(219, 216, 216);
+}
+
+.btn {
+  padding: 1.1rem 2rem;
+  cursor: pointer;
+}
+
+.btn a {
+  color: var(--White);
+  font-family: var(--ff-Raleway);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.btn-primary {
+  background-color: var(--Blue-inside-call-to-action-gradient);
+  font-family: var(--ff-Raleway);
+  border: none;
+  outline: none;
+  border-radius: 30px;
+}
+
+.btn-primary:hover {
+  background-color: hsl(198, 71%, 61%);
+}
+
+.btn a:hover {
+  font-size: 1.1rem;
+  border-bottom: none;
+}
+
+.emptyBackground {
+  height: 280px;
+  width: 100%;
+  background-color: var(--main-background);
+  margin-top: -250px;
+  display: none;
+}
+
+@media screen and (min-width: 360px) {
+  .emptyBackground {
+    margin-top: -270px;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emptyBackground {
+    display: none;
+  }
+}

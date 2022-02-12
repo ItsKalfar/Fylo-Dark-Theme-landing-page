@@ -1,0 +1,58 @@
+#teams .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0.5rem 1rem 0.5rem;
+}
+
+.container img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.textWrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 2.5rem auto;
+}
+
+h1 {
+  font-size: 1.35rem;
+}
+
+p {
+  margin: 1rem 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.textWrapper a {
+  color: var(--Cyan-inside-call-to-action-gradient);
+  border-bottom: 1px solid var(--Cyan-inside-call-to-action-gradient);
+  padding: 0 0 0.5rem 0;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--White);
+  border-bottom: 1px solid var(--White);
+}
+
+a:hover #arrowIcon fill {
+  color: #fff;
+}
+
+#arrowIcon {
+  width: 20px;
+  margin: 0;
+  padding: 0;
+  margin-left: 0.25rem;
+  margin-bottom: -5px;
+}
+
+@media screen and (min-width: 1024px) {
+  #teams .container {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,68 @@
+#form .container {
+  background-color: var(--intro-and-email-sign-up-background);
+  border-radius: 0.5rem;
+  z-index: 10;
+  padding: 3rem 2rem;
+  max-width: 500px;
+}
+
+#form {
+  position: relative;
+  top: -180px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+}
+
+#email {
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem 1.5rem;
+  border-radius: 1.75rem;
+  border: none;
+  outline: none;
+}
+
+#email::placeholder {
+  color: gray;
+  font-size: 12px;
+  font-family: "Open sans";
+}
+
+.input-section .btn {
+  width: 100%;
+}
+
+.input-section .btn a:hover {
+  font-size: 1.1rem;
+  border-bottom: none;
+}
+
+@media screen and (min-width: 1024px) {
+  #form .container {
+    max-width: 700px;
+  }
+
+  #form {
+    top: -150px;
+  }
+
+  .input-section {
+    flex-direction: row;
+  }
+
+  #email {
+    width: 150%;
+    margin-right: 1rem;
+  }
+
+  .input-section .btn {
+    margin: 0;
+    width: 80%;
+  }
+}

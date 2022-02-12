@@ -1,0 +1,14 @@
+.heading {
+  color: var(--White);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.text {
+  color: rgb(241, 239, 239);
+  text-align: center;
+  font-family: "Open sans";
+  line-height: 1.75;
+  margin: 1rem 0;
+}
